@@ -73,7 +73,7 @@ p {
 }
 
 /* Media query for mobile devices */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
     .container {
         width: 100%;
         padding: 10px;
@@ -114,10 +114,10 @@ nav ul li a:hover {
     color: #333;
 }
 
-.footer {
+footer {
     color: #fff;
     text-align: center;
-    background-color: #eee;
+    background-color: none;
 }
 
 /* Header styles */
@@ -133,6 +133,31 @@ header {
     border-radius: 50%; /* Maintain the round shape */
     display: block;
     margin: 0 auto; /* Center the image */
+}
+
+/* Icon styles */
+footer a {
+    display: inline-block;
+    text-align: center;
+    margin: 0 10px;
+    font-size: 30px; /* Adjust the size of the icons */
+    font-weight: bold;
+    color: #0077B5; /* Change the color of the LinkedIn icon */
+}
+
+footer a:first-child {
+    color: #fff; /* Change the color of the email icon */
+    font-size: 30px;
+}
+
+footer a:nth-child(3) {
+    color: #000; /* Change the color of the Twitter icon */
+}
+
+/* Twitter icon styling */
+.custom-icon {
+    width: 30px; /* Adjust the width of the icon */
+    height: auto; /* Maintain aspect ratio */
 }
 
 /* Media queries for responsive design */
