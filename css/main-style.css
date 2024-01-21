@@ -68,6 +68,15 @@ h4 {
     box-sizing: border-box; /* Ensures padding is included in width */
 }
 
+.diagram{
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 25px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding is included in width */
+}
+
 p {
     line-height: 1.6;
     color: black;
