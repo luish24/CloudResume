@@ -3,39 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Luis Hidalgo: Projects</title>
-    <link rel="stylesheet" href="css/main-style.css">
+    <title>Luis Hidalgo: Projects Page</title>
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
     <div class="container">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-            </ul>
-        </nav>
-
-        <header class="header">
+        <header>
             <img src="Images/Image.jpg" alt="Your Photo" class="profile-pic">
-            <h2>Projects</h2>
+            <h5>Luis Hidalgo</h5>
         </header>
 
-        <main>
-            <section id="cloudresume" class="cloudresume">
-                <h3>January 2024: Cloud Resume Website hosted on AWS</h3>
-                <p>This project was created using HTML/CSS and being hosted on Amazon Web Services (AWS). The AWS services used are Amazon S3, Route53, Certficate Manager, CloudFront and CodePipeline.</p>
-                <p>Route53 was used to purchase a custom domain URL and Certificate Manager was used to obtain a SSL/HTTPS certificate which allowed my site to use a secure connection and not be flagged as unsecure by the browser.</p>
-                <p>The previous two steps made it so that I could create a CloudFront distribution that would point my custom domain URL to my S3 bucket endpoint. Traffic here is being redirected from HTTP to HTTPS creating that secure 
-                    connection and providing low latency and high transfer speeds. </p>
-                <p>I then used Git for version control and GitHub to host my code's repository. To pair this nicely, I implemented CodePipeline to add a CI/CD aspect to this project. Connecting my GitHub repo to CodePipeline
-                facilitated the updating process for my site because everytime I made a change to my code or main branch and then pushed the changes this would trigger my pipeline and update the site.
-                </p>
-                <img src="Images/Diagram.png" alt="AWS Diagram" class="diagram">
-                <p>Here's a link to the GitHub Repo used for this Project: <a href="https://github.com/luish24/CloudResume" target="_blank" class="external-link">GitHub Repo</a></p>
-            </section>    
-                    
+        <main class="linktree-container">
+            <section class="linktree-section">
+                <a href="index.html" class="linktree-link">Home</a>
+            </section>
+            <section class="linktree-section">
+                <a href="CloudResume.html" class="linktree-link">AWS Cloud Resume</a>
+            </section>
         <footer>
             <a href="mailto:luisshidalgo24@icloud.com" target="_blank" rel="noopener noreferrer" class="icon">
                 <i class="fas fa-envelope"></i>
@@ -48,12 +35,12 @@
             <a href="https://github.com/luish24" target="_blank" rel="noopener noreferrer" class="icon">
                 <i class="fab fa-github"></i>
                 <span class="tooltip"></span>
-            </a>
+            </a?\>
             <a href="https://twitter.com/luisshidalgo" target="_blank" rel="noopener noreferrer" class="icon">
                 <img src="Images/twtiter.png" class="custom-icon">
                 <span class="tooltip"></span>
             </a>
-    
+        
             <h4>Powered by Amazon Web Services</h4>
             <h4>&copy; Copyright 2024. All Rights Reserved.</h4>
         </footer>

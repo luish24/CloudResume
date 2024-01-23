@@ -16,18 +16,22 @@ body {
 header {
     text-align: center;
     margin-bottom: 20px;
+    position: relative;
 }
 
 .profile-pic {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
 }
 
-h5 {
+h2 {
     font-size: x-large;
     font-weight: bolder;
-    color: #fff;
+    color: #000;
     text-decoration: underline;
 }
 
@@ -44,13 +48,22 @@ h4 {
     font-size: small;
 }
 
-section {
+h5{
+    font-size: x-large;
+    font-weight: bolder;
+    color: #fff;
+    text-decoration: underline;
+    text-align: center;
+}
+
+/* Section styles */
+.education, .work-experience, .certifications, .diagram, .cloudresume{
     margin-bottom: 20px;
     background-color: white;
     border-radius: 25px;
     padding: 20px;
     width: 100%;
-    box-sizing: border-box; /* Ensures padding is included in width */
+    box-sizing: border-box;
 }
 
 .ITILpic,
@@ -63,21 +76,8 @@ section {
 
 p {
     line-height: 1.6;
-}
-
-/* Media query for tablets */
-@media screen and (max-width: 768px) {
-    .container {
-        width: 90%;
-    }
-}
-
-/* Media query for mobile devices */
-@media screen and (max-width: 320px) {
-    .container {
-        width: 100%;
-        padding: 10px;
-    }
+    color: black;
+    text-align: left;
 }
 
 /* Navigation styles */
@@ -114,25 +114,48 @@ nav ul li a:hover {
     color: #333;
 }
 
+/* Linktree-like styles */
+.linktree-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 800px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.linktree-section {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.linktree-link {
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.linktree-link:hover {
+    background-color: #0056b3;
+}
+
 footer {
     color: #fff;
     text-align: center;
     background-color: none;
-}
-
-/* Header styles */
-header {
-    text-align: center;
-    position: relative;
-    padding-top: 20px; /* Adjust the space above the picture */
-}
-
-.profile-pic {
-    width: 200px; /* Set the desired width for the image */
-    height: 200px; /* Set the desired height for the image */
-    border-radius: 50%; /* Maintain the round shape */
-    display: block;
-    margin: 0 auto; /* Center the image */
 }
 
 /* Icon styles */
@@ -140,24 +163,64 @@ footer a {
     display: inline-block;
     text-align: center;
     margin: 0 10px;
-    font-size: 30px; /* Adjust the size of the icons */
+    font-size: 30px;
     font-weight: bold;
-    color: #0077B5; /* Change the color of the LinkedIn icon */
 }
 
 footer a:first-child {
-    color: #fff; /* Change the color of the email icon */
-    font-size: 30px;
+    color: #fff;
 }
 
 footer a:nth-child(3) {
-    color: #000; /* Change the color of the Twitter icon */
+    color: #000;
 }
 
-/* Twitter icon styling */
 .custom-icon {
-    width: 30px; /* Adjust the width of the icon */
-    height: auto; /* Maintain aspect ratio */
+    width: 30px;
+    height: auto;
+}
+
+/* Media queries for tablet screens */
+@media screen and (max-width: 768px) {
+    .header-title {
+        font-size: 20px;
+    }
+    .linktree-link {
+        font-size: 16px;
+        padding: 8px;
+        margin-bottom: 8px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container {
+        width: 90%;
+    }
+}
+
+/* Media queries for mobile screens */
+@media screen and (max-width: 320px) {
+    .header-title {
+        font-size: 18px;
+    }
+    .linktree-link {
+        font-size: 14px;
+        padding: 6px;
+        margin-bottom: 6px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Media queries for larger screens */
+@media screen and (min-width: 769px) {
+    .linktree-container {
+        margin: 30px auto;
+    }
 }
 
 /* Media queries for responsive design */
@@ -178,4 +241,3 @@ footer a:nth-child(3) {
         margin: 10px 0;
     }
 }
-
