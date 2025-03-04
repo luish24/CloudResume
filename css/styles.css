@@ -57,7 +57,7 @@ h5{
 }
 
 /* Section styles */
-.education, .work-experience, .certifications, .diagram, .cloudresume{
+.education, .work-experience, .certifications, .diagram, .cloudresume, .aboutme{
     margin-bottom: 20px;
     background-color: white;
     border-radius: 25px;
